@@ -1,0 +1,9 @@
+module subejem(
+			input clk,
+			input subsw,
+			output led);
+			
+always @(posedge clk)
+led <= subsw;
+
+endmodule 

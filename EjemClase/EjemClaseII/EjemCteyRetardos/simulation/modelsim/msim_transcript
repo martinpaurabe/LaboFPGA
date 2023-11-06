@@ -1,0 +1,61 @@
+# Reading pref.tcl
+# do VHDL1_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemCteyRetardos/VHDL1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:53:32 on May 15,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemCteyRetardos/VHDL1.vhd 
+# -- Loading package STANDARD
+# -- Compiling package FPGA_DE0_TYPES
+# -- Loading package FPGA_DE0_TYPES
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity VHDL1
+# ** Warning: C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemCteyRetardos/VHDL1.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# -- Compiling architecture my_logic of VHDL1
+# End time: 17:53:32 on May 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# 
+# vcom -93 -work work {C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemCteyRetardos/TB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:53:32 on May 15,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemCteyRetardos/TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package FPGA_DE0_TYPES
+# -- Compiling entity TB
+# -- Compiling architecture TB1 of TB
+# End time: 17:53:32 on May 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  TB
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" TB 
+# Start time: 17:53:32 on May 15,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.fpga_de0_types
+# Loading work.tb(tb1)
+# Loading work.vhdl1(my_logic)
+# ** Warning: (vsim-8684) No drivers exist on out port /tb/DUT/LED(7), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb/LED_IN(7).
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 400 ns
+# End time: 18:47:00 on May 15,2023, Elapsed time: 0:53:28
+# Errors: 0, Warnings: 1

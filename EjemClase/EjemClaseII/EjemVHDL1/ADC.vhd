@@ -1,0 +1,86 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+LIBRARY altera_mf;
+USE altera_mf.all;
+
+ENTITY ADC IS
+	PORT
+	(
+		RST_N			: IN  STD_LOGIC;
+		ENABLE		: IN  STD_LOGIC;
+		CLK		   : IN  STD_LOGIC;
+		ADC_ADDR	   : IN  BIT_VECTOR (2 downto 0);
+		ADC_VALUE  	: OUT BIT_VECTOR (11 downto 0);
+		ADC_CS_N		: OUT STD_LOGIC;
+		ADC_CCOM		: OUT STD_LOGIC;
+		ADC_SCLK		: BUFFER	STD_LOGIC;
+		ADC_SADDR	: OUT STD_LOGIC;
+		ADC_SDAT 	: IN	STD_LOGIC);
+END ADC;
+
+
+ARCHITECTURE ADC_128S022 OF ADC IS
+
+	SIGNAL BIT_CNT	: INTEGER range 0 to 32;
+	SIGNAL STT: INTEGER range 0 to 15;
+	SIGNAL ADC_VALUE_REG : BIT_VECTOR (15 downto 0);
+	SIGNAL ADC_ADDR_REG : BIT_VECTOR (15 downto 0);
+	
+--	COMPONENT MisComponent
+--	GENERIC (
+--	);
+--	PORT (
+--	);
+--	END COMPONENT;
+
+BEGIN
+   PROCESS (CLK)
+	BEGIN
+		IF (RST_N = '0') THEN 
+			BIT_CNT   <= 0;
+			ADC_CS_N  <= '1';
+			ADC_CCOM  <= '0';
+			ADC_SCLK  <= '1';
+			ADC_SADDR <= '1';
+			STT <= 0;
+			ADC_VALUE_REG <= "0000000000000000";
+		ELSE
+			CASE STT IS
+				WHEN 0 =>
+					ADC_CS_N  <= '1';
+					BIT_CNT   <= 0;
+					ADC_CCOM  <= '0';
+					ADC_SCLK  <= '1';			
+					ADC_SADDR <= '1';
+					ADC_VALUE_REG <= "0000000000000000";
+					IF (ENABLE = '1' AND CLK ='1') THEN
+						ADC_CS_N  <= '0';
+						STT <= 1;
+						ADC_ADDR_REG(13) <= ADC_ADDR(2);
+						ADC_ADDR_REG(12) <= ADC_ADDR(1);
+						ADC_ADDR_REG(11) <= ADC_ADDR(0);
+					END IF;
+				WHEN 1 =>
+					ADC_SCLK <= not ADC_SCLK;
+					IF ADC_SCLK = '1' THEN
+						ADC_SADDR <= to_stdulogic(ADC_ADDR_REG(15));
+						ADC_ADDR_REG (15 downto 0) <= ADC_ADDR_REG (14 downto 0) & '0';
+					ELSIF ADC_SCLK = '0' THEN
+						ADC_VALUE_REG (15 downto 0) <= ADC_VALUE_REG (14 downto 0) & to_bit(ADC_SDAT);
+						BIT_CNT <= BIT_CNT +1;
+						IF BIT_CNT = 15 THEN
+							STT <= 2;
+						END IF;
+					END IF;
+				WHEN 2 =>
+					ADC_SCLK <= '1';
+					ADC_VALUE(11 downto 0) <= ADC_VALUE_REG (11 downto 0);
+					ADC_CCOM <= '1';
+					STT <= 0;
+				WHEN OTHERS =>
+					STT <= 0;
+			END CASE;
+		END IF;
+	END PROCESS;
+END ADC_128S022;

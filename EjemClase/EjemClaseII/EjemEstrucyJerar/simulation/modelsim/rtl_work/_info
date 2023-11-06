@@ -1,0 +1,160 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemEstrucyJerar/simulation/modelsim
+Ecompuerta
+Z1 w1696277174
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z5 8C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemEstrucyJerar/compuerta.vhd
+Z6 FC:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemEstrucyJerar/compuerta.vhd
+l0
+L5 1
+VdSFkFh<jeH0Pf=mFz:58z0
+!s100 [U0N]Q^iV?hjemPA0m;<e3
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1696277327
+!i10b 1
+Z9 !s108 1696277327.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemEstrucyJerar/compuerta.vhd|
+Z11 !s107 C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemEstrucyJerar/compuerta.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Amy_not
+R2
+R3
+R4
+DEx4 work 9 compuerta 0 22 dSFkFh<jeH0Pf=mFz:58z0
+!i122 1
+l14
+L12 6
+VneQC;@DloRJmJ6^YjR6Nh2
+!s100 ]fCf6Mzn33F^j[I]UgKOb3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Pfpga_de0_types
+!i122 0
+Z14 w1664288389
+R0
+Z15 8C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemEstrucyJerar/VHDL1.vhd
+Z16 FC:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemEstrucyJerar/VHDL1.vhd
+l0
+L23 1
+V9jM6d81>8b@5aETDeoF6;3
+!s100 ^fTCeS6gQ>>E4Cf^VCdL?0
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemEstrucyJerar/VHDL1.vhd|
+Z18 !s107 C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemEstrucyJerar/VHDL1.vhd|
+!i113 1
+R12
+R13
+Etb
+Z19 w1664288457
+Z20 DPx4 work 14 fpga_de0_types 0 22 9jM6d81>8b@5aETDeoF6;3
+R3
+R4
+!i122 2
+R0
+Z21 8C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemEstrucyJerar/TB.vhd
+Z22 FC:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemEstrucyJerar/TB.vhd
+l0
+L13 1
+V5mOo[hZR7=XLgUi6dQzQD3
+!s100 oXZ@U]jU;=@nVjfPgWcMP3
+R7
+31
+R8
+!i10b 1
+R9
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemEstrucyJerar/TB.vhd|
+!s107 C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemEstrucyJerar/TB.vhd|
+!i113 1
+R12
+R13
+Atb1
+R20
+R3
+R4
+DEx4 work 2 tb 0 22 5mOo[hZR7=XLgUi6dQzQD3
+!i122 2
+l35
+L17 68
+V=8YCU8AkhW[V44maC==[;1
+!s100 h=@=iGcfV34U;Zemd;aRI3
+R7
+31
+R8
+!i10b 1
+R9
+R23
+Z24 !s107 C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemEstrucyJerar/TB.vhd|
+!i113 1
+R12
+R13
+Evhdl1
+R14
+R3
+R4
+R20
+!i122 0
+R0
+R15
+R16
+l0
+L36 1
+Vk5LVF8hSK_Gi^`if8[OWn0
+!s100 4XVYWgkRTl;?c?k[02QF72
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Amy_logic
+R3
+R4
+R20
+DEx4 work 5 vhdl1 0 22 k5LVF8hSK_Gi^`if8[OWn0
+!i122 0
+l55
+L46 35
+V`RYiL8CnRJibhO^HeWzgB3
+!s100 `PYKNKmzSmY;R]OHGb:zL1
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13

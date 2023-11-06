@@ -1,0 +1,30 @@
+`timescale 10ns/1ns   //Corresponde a la unidad de tiempo del simulador y precisión
+module tb;            //Nombre del Test Bench (tiene que ser igual al del archivo)
+reg [1:0] KEY;			 //Variable Interna del TB que simulara entradas del programa
+reg clk;					 //(Recordar que el TOP del programa es para programar, pero
+							 //en el banco de prueba el "TOP" es el TB	
+
+wire [7:0] LED;		 //Tengo que asignar la salidas como wire
+
+ejemvl3 ejemvl3_inst( clk, KEY, LED);
+
+initial
+begin
+clk = 0;					//Importante inicializar el valor de las variables	
+KEY = 0;
+#200 $stop;				//Cantidad de Unidades de tiempo del simulador y despues para
+end						//Cuando se crea el Test Bench se puede seleccionar (vector o tiempo)
+
+always
+#5 clk=~clk;
+
+always
+begin
+#4 KEY = 0;
+#4 KEY = 1;
+#4 KEY = 2;
+#4 KEY = 3;
+end
+
+
+endmodule

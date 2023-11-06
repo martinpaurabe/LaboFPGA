@@ -1,0 +1,496 @@
+Analysis & Synthesis report for VHDL1
+Thu Oct 26 15:53:41 2023
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Port Connectivity Checks: "ADC:ADC0"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Oct 26 15:53:41 2023       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; VHDL1                                       ;
+; Top-level Entity Name              ; VHDL1                                       ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 61                                          ;
+;     Total combinational functions  ; 61                                          ;
+;     Dedicated logic registers      ; 12                                          ;
+; Total registers                    ; 12                                          ;
+; Total pins                         ; 20                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE22F17C6       ;                    ;
+; Top-level entity name                                            ; VHDL1              ; VHDL1              ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                 ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                                    ; Library ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------------------------------------------------+---------+
+; VHDL1.vhd                        ; yes             ; User VHDL File        ; C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/VHDL1.vhd ;         ;
+; adc.vhd                          ; yes             ; Auto-Found VHDL File  ; C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd   ;         ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                   ;
++---------------------------------------------+-----------------+
+; Resource                                    ; Usage           ;
++---------------------------------------------+-----------------+
+; Estimated Total logic elements              ; 61              ;
+;                                             ;                 ;
+; Total combinational functions               ; 61              ;
+; Logic element usage by number of LUT inputs ;                 ;
+;     -- 4 input functions                    ; 18              ;
+;     -- 3 input functions                    ; 12              ;
+;     -- <=2 input functions                  ; 31              ;
+;                                             ;                 ;
+; Logic elements by mode                      ;                 ;
+;     -- normal mode                          ; 49              ;
+;     -- arithmetic mode                      ; 12              ;
+;                                             ;                 ;
+; Total registers                             ; 12              ;
+;     -- Dedicated logic registers            ; 12              ;
+;     -- I/O registers                        ; 0               ;
+;                                             ;                 ;
+; I/O pins                                    ; 20              ;
+;                                             ;                 ;
+; Embedded Multiplier 9-bit elements          ; 0               ;
+;                                             ;                 ;
+; Maximum fan-out node                        ; ADC:ADC0|STT[0] ;
+; Maximum fan-out                             ; 21              ;
+; Total fan-out                               ; 218             ;
+; Average fan-out                             ; 1.93            ;
++---------------------------------------------+-----------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |VHDL1                     ; 61 (16)             ; 12 (12)                   ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |VHDL1              ; VHDL1       ; work         ;
+;    |ADC:ADC0|              ; 45 (45)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VHDL1|ADC:ADC0     ; ADC         ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                      ;
++-----------------------------------------------------+---------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal       ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------------+------------------------+
+; ADC:ADC0|ADC_CS_N                                   ; ADC:ADC0|Mux55            ; yes                    ;
+; ADC:ADC0|ADC_SADDR                                  ; ADC:ADC0|Mux29            ; yes                    ;
+; ADC:ADC0|ADC_SCLK                                   ; ADC:ADC0|Mux58            ; yes                    ;
+; ADC:ADC0|STT[0]                                     ; ADC:ADC0|Mux56            ; yes                    ;
+; ADC:ADC0|STT[1]                                     ; ADC:ADC0|Mux56            ; yes                    ;
+; ADC:ADC0|ADC_ADDR_REG[15]                           ; ADC:ADC0|ADC_ADDR_REG[0]  ; yes                    ;
+; ADC:ADC0|BIT_CNT[0]                                 ; ADC:ADC0|Mux54            ; yes                    ;
+; ADC:ADC0|BIT_CNT[1]                                 ; ADC:ADC0|Mux54            ; yes                    ;
+; ADC:ADC0|BIT_CNT[2]                                 ; ADC:ADC0|Mux54            ; yes                    ;
+; ADC:ADC0|BIT_CNT[3]                                 ; ADC:ADC0|Mux54            ; yes                    ;
+; ADC:ADC0|BIT_CNT[4]                                 ; ADC:ADC0|Mux54            ; yes                    ;
+; ADC:ADC0|BIT_CNT[5]                                 ; ADC:ADC0|Mux54            ; yes                    ;
+; ADC:ADC0|ADC_ADDR_REG[14]                           ; ADC:ADC0|ADC_ADDR_REG[0]  ; yes                    ;
+; ADC:ADC0|ADC_ADDR_REG[13]                           ; ADC:ADC0|ADC_ADDR_REG[11] ; yes                    ;
+; ADC:ADC0|ADC_ADDR_REG[12]                           ; ADC:ADC0|ADC_ADDR_REG[11] ; yes                    ;
+; ADC:ADC0|ADC_ADDR_REG[11]                           ; ADC:ADC0|ADC_ADDR_REG[11] ; yes                    ;
+; Number of user-specified and inferred latches = 16  ;                           ;                        ;
++-----------------------------------------------------+---------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 12    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 1:1                ; 12 bits   ; 0 LEs         ; 0 LEs                ; 0 LEs                  ; No         ; |VHDL1|ADC:ADC0|Mux47      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ADC:ADC0"                                                                                  ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; adc_addr[2] ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; adc_addr[1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; adc_addr[0] ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; adc_value   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; adc_ccom    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 20                          ;
+; cycloneiii_ff         ; 12                          ;
+;     plain             ; 12                          ;
+; cycloneiii_lcell_comb ; 63                          ;
+;     arith             ; 12                          ;
+;         2 data inputs ; 12                          ;
+;     normal            ; 51                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 16                          ;
+;         3 data inputs ; 12                          ;
+;         4 data inputs ; 18                          ;
+;                       ;                             ;
+; Max LUT depth         ; 3.50                        ;
+; Average LUT depth     ; 2.26                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Thu Oct 26 15:53:31 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VHDL1 -c VHDL1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 3 design units, including 1 entities, in source file vhdl1.vhd
+    Info (12022): Found design unit 1: FPGA_DE0_TYPES File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/VHDL1.vhd Line: 4
+    Info (12022): Found design unit 2: VHDL1-my_logic File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/VHDL1.vhd Line: 31
+    Info (12023): Found entity 1: VHDL1 File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/VHDL1.vhd Line: 17
+Info (12021): Found 2 design units, including 1 entities, in source file compuerta.vhd
+    Info (12022): Found design unit 1: compuerta-my_and File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/compuerta.vhd Line: 12
+    Info (12023): Found entity 1: Compuerta File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/compuerta.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file tb.vhd
+    Info (12022): Found design unit 1: TB-TB1 File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/TB.vhd Line: 17
+    Info (12023): Found entity 1: TB File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/TB.vhd Line: 13
+Info (12127): Elaborating entity "VHDL1" for the top level hierarchy
+Warning (10540): VHDL Signal Declaration warning at VHDL1.vhd(33): used explicit default value for signal "ADC_CH0" because signal was never assigned a value File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/VHDL1.vhd Line: 33
+Warning (10036): Verilog HDL or VHDL warning at VHDL1.vhd(34): object "ADC_MESU" assigned a value but never read File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/VHDL1.vhd Line: 34
+Warning (10036): Verilog HDL or VHDL warning at VHDL1.vhd(35): object "ADC_CCOM" assigned a value but never read File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/VHDL1.vhd Line: 35
+Warning (12125): Using design file adc.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: ADC-ADC_128S022 File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 23
+    Info (12023): Found entity 1: ADC File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 7
+Info (12128): Elaborating entity "ADC" for hierarchy "ADC:ADC0" File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/VHDL1.vhd Line: 69
+Warning (10492): VHDL Process Statement warning at adc.vhd(40): signal "RST_N" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 40
+Warning (10492): VHDL Process Statement warning at adc.vhd(49): signal "STT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 49
+Warning (10492): VHDL Process Statement warning at adc.vhd(57): signal "ENABLE" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 57
+Warning (10492): VHDL Process Statement warning at adc.vhd(60): signal "ADC_ADDR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 60
+Warning (10492): VHDL Process Statement warning at adc.vhd(61): signal "ADC_ADDR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 61
+Warning (10492): VHDL Process Statement warning at adc.vhd(62): signal "ADC_ADDR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 62
+Warning (10492): VHDL Process Statement warning at adc.vhd(65): signal "ADC_SCLK" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 65
+Warning (10492): VHDL Process Statement warning at adc.vhd(66): signal "ADC_SCLK" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 66
+Warning (10492): VHDL Process Statement warning at adc.vhd(67): signal "ADC_ADDR_REG" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 67
+Warning (10492): VHDL Process Statement warning at adc.vhd(68): signal "ADC_ADDR_REG" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 68
+Warning (10492): VHDL Process Statement warning at adc.vhd(69): signal "ADC_SCLK" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 69
+Warning (10492): VHDL Process Statement warning at adc.vhd(70): signal "ADC_VALUE_REG" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 70
+Warning (10492): VHDL Process Statement warning at adc.vhd(70): signal "ADC_SDAT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 70
+Warning (10492): VHDL Process Statement warning at adc.vhd(71): signal "BIT_CNT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 71
+Warning (10492): VHDL Process Statement warning at adc.vhd(72): signal "BIT_CNT" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 72
+Warning (10492): VHDL Process Statement warning at adc.vhd(78): signal "ADC_VALUE_REG" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 78
+Warning (10631): VHDL Process Statement warning at adc.vhd(38): inferring latch(es) for signal or variable "BIT_CNT", which holds its previous value in one or more paths through the process File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (10631): VHDL Process Statement warning at adc.vhd(38): inferring latch(es) for signal or variable "ADC_CS_N", which holds its previous value in one or more paths through the process File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (10631): VHDL Process Statement warning at adc.vhd(38): inferring latch(es) for signal or variable "ADC_CCOM", which holds its previous value in one or more paths through the process File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (10631): VHDL Process Statement warning at adc.vhd(38): inferring latch(es) for signal or variable "ADC_SCLK", which holds its previous value in one or more paths through the process File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (10631): VHDL Process Statement warning at adc.vhd(38): inferring latch(es) for signal or variable "ADC_SADDR", which holds its previous value in one or more paths through the process File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (10631): VHDL Process Statement warning at adc.vhd(38): inferring latch(es) for signal or variable "STT", which holds its previous value in one or more paths through the process File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (10631): VHDL Process Statement warning at adc.vhd(38): inferring latch(es) for signal or variable "ADC_VALUE_REG", which holds its previous value in one or more paths through the process File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (10631): VHDL Process Statement warning at adc.vhd(38): inferring latch(es) for signal or variable "ADC_ADDR_REG", which holds its previous value in one or more paths through the process File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (10631): VHDL Process Statement warning at adc.vhd(38): inferring latch(es) for signal or variable "ADC_VALUE", which holds its previous value in one or more paths through the process File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE[0]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE[1]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE[2]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE[3]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE[4]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE[5]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE[6]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE[7]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE[8]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE[9]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE[10]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE[11]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_ADDR_REG[0]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_ADDR_REG[1]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_ADDR_REG[2]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_ADDR_REG[3]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_ADDR_REG[4]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_ADDR_REG[5]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_ADDR_REG[6]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_ADDR_REG[7]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_ADDR_REG[8]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_ADDR_REG[9]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_ADDR_REG[10]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_ADDR_REG[11]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_ADDR_REG[12]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_ADDR_REG[13]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_ADDR_REG[14]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_ADDR_REG[15]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE_REG[0]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE_REG[1]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE_REG[2]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE_REG[3]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE_REG[4]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE_REG[5]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE_REG[6]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE_REG[7]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE_REG[8]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE_REG[9]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE_REG[10]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_VALUE_REG[11]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "STT[0]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "STT[1]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "STT[2]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "STT[3]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_SADDR" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_SCLK" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_CCOM" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "ADC_CS_N" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "BIT_CNT[0]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "BIT_CNT[1]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "BIT_CNT[2]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "BIT_CNT[3]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "BIT_CNT[4]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Info (10041): Inferred latch for "BIT_CNT[5]" at adc.vhd(38) File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (13012): Latch ADC:ADC0|ADC_SADDR has unsafe behavior File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 18
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADC:ADC0|STT[0] File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (13012): Latch ADC:ADC0|ADC_SCLK has unsafe behavior File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 17
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADC:ADC0|STT[0] File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (13012): Latch ADC:ADC0|STT[0] has unsafe behavior File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADC:ADC0|STT[0] File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (13012): Latch ADC:ADC0|STT[1] has unsafe behavior File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADC:ADC0|STT[0] File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (13012): Latch ADC:ADC0|BIT_CNT[0] has unsafe behavior File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADC:ADC0|STT[0] File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (13012): Latch ADC:ADC0|BIT_CNT[1] has unsafe behavior File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADC:ADC0|STT[0] File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (13012): Latch ADC:ADC0|BIT_CNT[2] has unsafe behavior File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADC:ADC0|STT[0] File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (13012): Latch ADC:ADC0|BIT_CNT[3] has unsafe behavior File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADC:ADC0|STT[0] File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (13012): Latch ADC:ADC0|BIT_CNT[4] has unsafe behavior File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADC:ADC0|STT[0] File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (13012): Latch ADC:ADC0|BIT_CNT[5] has unsafe behavior File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADC:ADC0|STT[0] File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (13012): Latch ADC:ADC0|ADC_ADDR_REG[13] has unsafe behavior File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADC:ADC0|STT[0] File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (13012): Latch ADC:ADC0|ADC_ADDR_REG[12] has unsafe behavior File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADC:ADC0|STT[0] File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (13012): Latch ADC:ADC0|ADC_ADDR_REG[11] has unsafe behavior File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ADC:ADC0|STT[0] File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd Line: 38
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LED[4]" is stuck at GND File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/VHDL1.vhd Line: 23
+    Warning (13410): Pin "LED[5]" is stuck at GND File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/VHDL1.vhd Line: 23
+    Warning (13410): Pin "LED[6]" is stuck at GND File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/VHDL1.vhd Line: 23
+    Warning (13410): Pin "LED[7]" is stuck at GND File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/VHDL1.vhd Line: 23
+Info (286030): Timing-Driven Synthesis is running
+Warning (20013): Ignored 24 assignments for entity "DE0_NANO" -- entity does not exist in design
+    Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_PRESERVE_HIGH_SPEED_TILES ON -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IGNORE_SOURCE_FILE_CHANGES OFF -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ALWAYS_USE_QXP_NETLIST OFF -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_COLOR 16764057 -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_ASSIGNMENTS ON -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_ASSIGNMENTS REPLACE_CONFLICTING -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_EXISTING_LOGICLOCK_REGIONS UPDATE_CONFLICTING -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PIN_ASSIGNMENTS ON -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_IMPORT_PROMOTE_ASSIGNMENTS ON -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_TYPE STANDARD_PARTITION -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ALLOW_MULTIPLE_PERSONAS OFF -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ASD_REGION_ID 1 -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS OFF -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_CONSTANTS_ON_INPUTS ON -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PROPAGATE_INVERSIONS_ON_INPUTS ON -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name REMOVE_LOGIC_ON_UNCONNECTED_OUTPUTS ON -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_INPUTS ON -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name MERGE_EQUIVALENT_BIDIRS ON -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity DE0_NANO -section_id Top was ignored
+    Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity DE0_NANO -section_id Top was ignored
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/VHDL1.vhd Line: 21
+    Warning (15610): No output dependent on input pin "ADC_SDAT" File: C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/VHDL1.vhd Line: 27
+Info (21057): Implemented 81 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 11 output pins
+    Info (21061): Implemented 61 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 89 warnings
+    Info: Peak virtual memory: 4784 megabytes
+    Info: Processing ended: Thu Oct 26 15:53:41 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:12
+
+

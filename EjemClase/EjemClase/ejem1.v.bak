@@ -1,0 +1,13 @@
+module ejem1(
+		input CLOCK_50,
+		input [1:0] KEY,
+		output [7:0] LED );
+		
+
+always @(posedge CLOCK_50)
+begin
+LED[0] <= KEY[0];
+LED[1] <= ~KEY[1];
+end
+
+endmodule 

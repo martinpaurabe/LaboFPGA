@@ -1,0 +1,158 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/jacoby/Documents/Materias/Lab DSP/HC11/Modelsim/FIR_sim/simulation/modelsim
+Peight_bit_int
+Z1 w1604968490
+R0
+Z2 8/home/jacoby/Documents/Materias/Lab DSP/HC11/Modelsim/FIR_sim/fir_srg.vhd
+Z3 F/home/jacoby/Documents/Materias/Lab DSP/HC11/Modelsim/FIR_sim/fir_srg.vhd
+l0
+L3
+VeliWU[^ndD3W7jY1URZ^_2
+!s100 PK`EmKMN;2aHFb:9FWbBW0
+Z4 OV;C;10.5b;63
+32
+Z5 !s110 1604982200
+!i10b 1
+Z6 !s108 1604982199.000000
+Z7 !s90 -reportprogress|300|-work|work|/home/jacoby/Documents/Materias/Lab DSP/HC11/Modelsim/FIR_sim/fir_srg.vhd|
+Z8 !s107 /home/jacoby/Documents/Materias/Lab DSP/HC11/Modelsim/FIR_sim/fir_srg.vhd|
+!i113 1
+Z9 o-work work
+Z10 tExplicit 1 CvgOpt 0
+vhard_block
+Z11 !s110 1604982167
+!i10b 1
+!s100 D0nnOIKTmRbIAoJ;di]E_2
+IHL]]AeAkSYmG_Y[@=^;La3
+Z12 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z13 w1604957086
+Z14 8SimFir_6_1200mv_85c_slow.vo
+Z15 FSimFir_6_1200mv_85c_slow.vo
+L0 3033
+Z16 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z17 !s108 1604982167.000000
+Z18 !s107 SimFir_6_1200mv_85c_slow.vo|
+Z19 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|SimFir_6_1200mv_85c_slow.vo|
+!i113 1
+Z20 o-vlog01compat -work work
+Z21 !s92 -vlog01compat -work work +incdir+.
+Z22 tCvgOpt 0
+vSimFir
+R11
+!i10b 1
+!s100 0ia^_E75@fBPW`z_490V^2
+I]1J2`MnO0S=6]GAHnZn7o0
+R12
+R0
+R13
+R14
+R15
+L0 32
+R16
+r1
+!s85 0
+31
+R17
+R18
+R19
+!i113 1
+R20
+R21
+R22
+n@sim@fir
+Esimfir
+R1
+Z23 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z24 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z25 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z26 DPx4 work 13 eight_bit_int 0 22 eliWU[^ndD3W7jY1URZ^_2
+R0
+R2
+R3
+l0
+L15
+VXl8USlVQZakS0ehjiSAj71
+!s100 M5nCeI3Fb``R:V?0LYAPe3
+R4
+32
+R5
+!i10b 1
+R6
+R7
+R8
+!i113 1
+R9
+R10
+Aflex
+R23
+R24
+R25
+R26
+DEx4 work 6 simfir 0 22 Xl8USlVQZakS0ehjiSAj71
+l30
+L21
+V^zZYGi`T_EUz>`R^U39O00
+!s100 K4H7iU:^_b=b^Ooz@N6S83
+R4
+32
+R5
+!i10b 1
+R6
+R7
+R8
+!i113 1
+R9
+R10
+Etb
+Z27 w1604981786
+R26
+R24
+R25
+R0
+Z28 8/home/jacoby/Documents/Materias/Lab DSP/HC11/Modelsim/FIR_sim/TB.vhd
+Z29 F/home/jacoby/Documents/Materias/Lab DSP/HC11/Modelsim/FIR_sim/TB.vhd
+l0
+L15
+V7Nz2TB@;OQ]WmfR=^CQUB3
+!s100 X]23kIge_J8]KQ3B;:><U0
+R4
+32
+Z30 !s110 1604982201
+!i10b 1
+Z31 !s108 1604982201.000000
+Z32 !s90 -reportprogress|300|-work|work|/home/jacoby/Documents/Materias/Lab DSP/HC11/Modelsim/FIR_sim/TB.vhd|
+Z33 !s107 /home/jacoby/Documents/Materias/Lab DSP/HC11/Modelsim/FIR_sim/TB.vhd|
+!i113 1
+R9
+R10
+Atb1
+R26
+R24
+R25
+DEx4 work 2 tb 0 22 7Nz2TB@;OQ]WmfR=^CQUB3
+l33
+L19
+V4=SGO7I`HaiEVYlLeH3^C2
+!s100 PJ<dlifP7m<[TIiBcJ9C@2
+R4
+32
+R30
+!i10b 1
+R31
+R32
+R33
+!i113 1
+R9
+R10

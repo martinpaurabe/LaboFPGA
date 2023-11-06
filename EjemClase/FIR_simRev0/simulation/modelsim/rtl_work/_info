@@ -1,0 +1,119 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/FIR_sim/simulation/modelsim
+Peight_bit_int
+!i122 0
+Z1 w1698348569
+R0
+Z2 8C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/FIR_sim/fir_srg.vhd
+Z3 FC:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/FIR_sim/fir_srg.vhd
+l0
+L3 1
+VY?ZGZg6bb6@dAbn[9DQcN3
+!s100 PK`EmKMN;2aHFb:9FWbBW0
+Z4 OV;C;2020.1;71
+31
+Z5 !s110 1698348747
+!i10b 1
+Z6 !s108 1698348747.000000
+Z7 !s90 -reportprogress|300|-93|-work|work|C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/FIR_sim/fir_srg.vhd|
+Z8 !s107 C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/FIR_sim/fir_srg.vhd|
+!i113 1
+Z9 o-93 -work work
+Z10 tExplicit 1 CvgOpt 0
+Esimfir
+R1
+Z11 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z12 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z13 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z14 DPx4 work 13 eight_bit_int 0 22 Y?ZGZg6bb6@dAbn[9DQcN3
+!i122 0
+R0
+R2
+R3
+l0
+Z15 L15 1
+V4^^J;e?;_gdLfMa:lVhTJ1
+!s100 nAl81a4Y8:eNhGKl4gIVl2
+R4
+31
+R5
+!i10b 1
+R6
+R7
+R8
+!i113 1
+R9
+R10
+Aflex
+R11
+R12
+R13
+R14
+DEx4 work 6 simfir 0 22 4^^J;e?;_gdLfMa:lVhTJ1
+!i122 0
+l31
+L22 191
+VlF=n0g=NCGiIQkVR;ZloB2
+!s100 HgO^z0<T]n@UHH7@B2<CO2
+R4
+31
+R5
+!i10b 1
+R6
+R7
+R8
+!i113 1
+R9
+R10
+Etb
+Z16 w1698347549
+R14
+R12
+R13
+!i122 1
+R0
+Z17 8C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/FIR_sim/TB.vhd
+Z18 FC:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/FIR_sim/TB.vhd
+l0
+R15
+VzhYzKFZ<`QbjbZ<o@MPW70
+!s100 X]23kIge_J8]KQ3B;:><U0
+R4
+31
+R5
+!i10b 1
+R6
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/FIR_sim/TB.vhd|
+!s107 C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/FIR_sim/TB.vhd|
+!i113 1
+R9
+R10
+Atb1
+R14
+R12
+R13
+DEx4 work 2 tb 0 22 zhYzKFZ<`QbjbZ<o@MPW70
+!i122 1
+l35
+L19 36
+VTV:gfKAVMb81R57ET^:^f0
+!s100 U9<e7<Ub`MQW@E4^ANQlj3
+R4
+31
+R5
+!i10b 1
+R6
+R19
+Z20 !s107 C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/FIR_sim/TB.vhd|
+!i113 1
+R9
+R10

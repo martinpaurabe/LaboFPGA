@@ -1,0 +1,59 @@
+# Reading pref.tcl
+# do SimFir_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/FIR_sim/fir_srg.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:32:27 on Oct 26,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/FIR_sim/fir_srg.vhd 
+# -- Loading package STANDARD
+# -- Compiling package eight_bit_int
+# -- Loading package eight_bit_int
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity SimFir
+# -- Compiling architecture flex of SimFir
+# End time: 16:32:27 on Oct 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/FIR_sim/TB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:32:27 on Oct 26,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/FIR_sim/TB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package eight_bit_int
+# -- Compiling entity TB
+# -- Compiling architecture TB1 of TB
+# End time: 16:32:27 on Oct 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  TB
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" TB 
+# Start time: 16:32:28 on Oct 26,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.eight_bit_int
+# Loading work.tb(tb1)
+# Loading ieee.std_logic_arith(body)
+# Loading work.simfir(flex)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 200 ns
+# End time: 16:36:01 on Oct 26,2023, Elapsed time: 0:03:33
+# Errors: 0, Warnings: 0

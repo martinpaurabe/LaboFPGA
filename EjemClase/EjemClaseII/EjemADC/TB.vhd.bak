@@ -1,0 +1,55 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all; 
+
+LIBRARY work;
+USE work.FPGA_DE0_TYPES.ALL;
+
+ENTITY TB IS 
+	
+END TB;
+
+ARCHITECTURE TB1 OF TB IS 
+signal Sim_SW      :   IN  bit_vector (3 downto 0);
+signal Sim_KEY 	 :   IN  KEYS;
+signal Sim_LED     :   OUT LEDS);
+signal Sim_CLOCK_50:	std_logic:='0';
+signal Sim_rst:	std_logic:='0';
+
+constant CLOCK_50_period : time := 20 ns;
+
+COMPONENT VHDL1 IS                         ------> Interface
+  PORT (
+	   CLOCK_50   :   IN  BIT;
+		rst	  :   IN  BIT;
+      SW      :   IN  bit_vector (3 downto 0);
+		KEY 	  :   IN  KEYS;
+      LED     :   OUT LEDS);
+		
+END VHDL1;
+
+BEGIN 
+
+My_VHDL: VHDL1 port map(Sim_CLOCK_50,Sim_rst,SW => Sim_SW,KEY => Sim_KEY,LED => Sim_LED);
+
+-- Test bench 
+
+Sim_SW(0)  <= 0,1 after 40 ns, 0 after 60 ns, 1 after 80 ns;
+Sim_SW(1)  <= 0,1 after 60 ns, 0 after 100 ns, 1 after 120 ns;
+
+Sim_KEY <= 0,1 after 20 ns, 2 after 40 ns,2 after 60 ns;
+
+
+rst  <= '1','0' after 10 ns;
+
+ -- Clock process definitions( clock with 50% duty cycle is generated here.
+CLOCK_50_process :process
+   begin
+        CLOCK_50 <= '0';
+        wait for CLOCK_50_period/2;  --for 5 ns signal is '0'.
+        CLOCK_50 <= '1';
+        wait for CLOCK_50_period/2;  --for next 5 ns signal is '1'.
+   end process;
+
+ 
+END ARCHITECTURE;
+

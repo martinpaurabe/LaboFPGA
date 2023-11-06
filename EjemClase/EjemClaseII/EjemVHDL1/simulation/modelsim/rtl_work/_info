@@ -1,0 +1,158 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/simulation/modelsim
+Eadc
+Z1 w1698346244
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd
+Z5 FC:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd
+l0
+L7 1
+V>8dUL`A93^Nb:<nLcdcP>0
+!s100 fY2ioV[?il>L6jODWfO[J0
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1698346466
+!i10b 1
+Z8 !s108 1698346466.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd|
+Z10 !s107 C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/adc.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aadc_128s022
+R2
+R3
+DEx4 work 3 adc 0 22 >8dUL`A93^Nb:<nLcdcP>0
+!i122 1
+l37
+L23 64
+VPmmFDh99Z<kIJm[c?Y84]1
+!s100 JVY1DY6bRHaLY;aUe009G2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Pfpga_de0_types
+!i122 0
+Z13 w1698346409
+R0
+Z14 8C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/VHDL1.vhd
+Z15 FC:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/VHDL1.vhd
+l0
+L4 1
+VVVOeAnM<H2RhEd@o42E4i1
+!s100 TMejnkXXj38Hj9U66cXH_2
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/VHDL1.vhd|
+Z17 !s107 C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/VHDL1.vhd|
+!i113 1
+R11
+R12
+Etb
+Z18 w1698346057
+Z19 DPx4 work 14 fpga_de0_types 0 22 VVOeAnM<H2RhEd@o42E4i1
+R2
+R3
+!i122 2
+R0
+Z20 8C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/TB.vhd
+Z21 FC:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/TB.vhd
+l0
+L13 1
+V5mOo[hZR7=XLgUi6dQzQD3
+!s100 oXZ@U]jU;=@nVjfPgWcMP3
+R6
+31
+R7
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/TB.vhd|
+!s107 C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/TB.vhd|
+!i113 1
+R11
+R12
+Atb1
+R19
+R2
+R3
+DEx4 work 2 tb 0 22 5mOo[hZR7=XLgUi6dQzQD3
+!i122 2
+l43
+L17 72
+Vj`@Yndm0L:ezf>BF3Jjaa3
+!s100 >N620HQ`CSA9IkY[G]on<3
+R6
+31
+R7
+!i10b 1
+R8
+R22
+Z23 !s107 C:/Users/mpaur/OneDrive/ITBA/Materias/DSP y FPGA/FPGA/EjemClase/EjemClaseII/EjemVHDL1/TB.vhd|
+!i113 1
+R11
+R12
+Evhdl1
+R13
+R2
+R3
+R19
+!i122 0
+R0
+R14
+R15
+l0
+L17 1
+V5ffCZ6ZFL@IA14fzOnE[10
+!s100 zB?GNM>XT5AbEOTRYO2=40
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Amy_logic
+R2
+R3
+R19
+DEx4 work 5 vhdl1 0 22 5ffCZ6ZFL@IA14fzOnE[10
+!i122 0
+l53
+L31 53
+V8cl4KfVUkiePh]nM0a=2F0
+!s100 nFkA=ZSXkL5RULVNgfl0X0
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12

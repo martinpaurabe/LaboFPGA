@@ -1,0 +1,117 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemProces/simulation/modelsim
+Pfpga_de0_types
+!i122 0
+Z1 w1664148855
+R0
+Z2 8C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemProces/VHDL1.vhd
+Z3 FC:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemProces/VHDL1.vhd
+l0
+L5 1
+V3Zm;c3la1YXJ?@CZN2efE1
+!s100 HFbQ6=d[58MIM:eRh;<7E3
+Z4 OV;C;2020.1;71
+31
+Z5 !s110 1696279931
+!i10b 1
+Z6 !s108 1696279931.000000
+Z7 !s90 -reportprogress|300|-93|-work|work|C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemProces/VHDL1.vhd|
+Z8 !s107 C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemProces/VHDL1.vhd|
+!i113 1
+Z9 o-93 -work work
+Z10 tExplicit 1 CvgOpt 0
+Etb
+Z11 w1664148629
+Z12 DPx4 work 14 fpga_de0_types 0 22 3Zm;c3la1YXJ?@CZN2efE1
+Z13 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z14 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z15 8C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemProces/TB.vhd
+Z16 FC:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemProces/TB.vhd
+l0
+L13 1
+V5mOo[hZR7=XLgUi6dQzQD3
+!s100 oXZ@U]jU;=@nVjfPgWcMP3
+R4
+31
+R5
+!i10b 1
+R6
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemProces/TB.vhd|
+!s107 C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemProces/TB.vhd|
+!i113 1
+R9
+R10
+Atb1
+R12
+R13
+R14
+DEx4 work 2 tb 0 22 5mOo[hZR7=XLgUi6dQzQD3
+!i122 1
+l35
+L17 68
+V;l6Oj5`zYD:`1BoB2gnng1
+!s100 KH:iR1jI^Do[KCY]Md9cL2
+R4
+31
+R5
+!i10b 1
+R6
+R17
+Z18 !s107 C:/Users/mpaurabe/Desktop/ITBA/Materias/Labo DSP y FPGA/Ejemplos FPGA/EjemClaseII/EjemProces/TB.vhd|
+!i113 1
+R9
+R10
+Evhdl1
+R1
+R13
+R14
+R12
+!i122 0
+R0
+R2
+R3
+l0
+L18 1
+VG7_hTzU]naaTnbO7CzNY82
+!s100 oD?g29Ub7gXEn7^7CU`J;2
+R4
+31
+R5
+!i10b 1
+R6
+R7
+R8
+!i113 1
+R9
+R10
+Amy_logic
+R13
+R14
+R12
+DEx4 work 5 vhdl1 0 22 G7_hTzU]naaTnbO7CzNY82
+!i122 0
+l30
+L28 26
+VAkon6GZgbHJd94cdMfk=`2
+!s100 OB<mI4G8Qf]Y[Z1eKGI9c3
+R4
+31
+R5
+!i10b 1
+R6
+R7
+R8
+!i113 1
+R9
+R10
